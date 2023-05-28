@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge Encriptador</title>
+    <script src="https://kit.fontawesome.com/a7ed089d77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Elementos/Vector2.png" alt="logo">
+    </header>
+    <main class="principal" >
+        <section class="area1">
+            <div class="caja-text" >
+                <textarea class="text-area" onkeypress="return minusculas(event)" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="seccionBaja" >
+                <p class="advertencia"><img class="admiracion" src="Elementos/exclamacion.png" alt="simbolo exclamacion">Solo letras minúsculas y sin acento</p>
+                <div class="botones">
+                    <Button class="encriptar" >Encriptar</Button>
+                    <Button class="desencriptar">Desencriptar</Button>
+                    <Button class="limpiar">Limpiar</Button>
+                </div>
+            </div>
+        </section>
+        <section class="area2">                
+            <img class="dibujo" src="Elementos/Candado3.png" alt="dibujo" id="dibujo" />
+            <h3 class="mensajeNoEncontrado">Ningún mensaje fue encontrado</h3>
+            <p class="contenedorParrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+           
+            <div class="contenedor-resultado">
+                <h3>Mensaje:</h3>
+                <p class="texto-resultado"></p>
+            </div>
+            <button onclick="" class="copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="autor">Desarrollado por Alex David Frías</p>
+        <div class="redesSociales">
+            <ul>
+                <li><a href="https://github.com/Memorexf" class="github"><i class="fa-brands fa-github" style="color: #66fcf1;"></i></a></li>
+                <li><a href="https://linkedin.com/in/david-frías-ruiz-9637b91a6" class="linkedin"><i class="fa-brands fa-linkedin" style="color: #66fcf1;"></i></a></li>
+                <li><a href="https://instagram.com/memo__rexf?igshid=MzNlNGNkZWQ4Mg==" class="instagram"><i class="fa-brands fa-instagram" style="color: #66fcf1;"></i></a></li>
+            </ul>            
+        </div>
+    </footer>
+<script src="archivo.js" ></script>
+</body>
+</html>
